@@ -152,7 +152,7 @@ void UpdateAccount()
        printf("\nEnter the account number:");
        scanf("%d",&account);
 
-     // We create our While () loop function for updating employee’s details
+     // We create our While () loop function for updating employeeï¿½s details
 
      while(fscanf(p,"%s\t\t%d\t\t%s\t%s\t%d\t%s\t%d\t\t%s\t%d\t%s\n",bk.DateOfcreation,&bk.AccountNumber,bk.Name,bk.DateOfBirth,&bk.Age,
                  bk.Address,&bk.CitizenshipNumber,bk.PhoneNumber,&bk.AmountDeposit,bk.TypeOfAccount)!=EOF){
@@ -181,7 +181,7 @@ void UpdateAccount()
 
              }
              else{
-                // We save previous employee’s details in a new file
+                // We save previous employeeï¿½s details in a new file
                 fprintf(t,"%s\t\t%d\t\t%s\t%s\t%d\t%s\t%d\t\t%s\t%d\t%s\n",bk.DateOfcreation,bk.AccountNumber,bk.Name,bk.DateOfBirth,bk.Age,
                           bk.Address,bk.CitizenshipNumber,bk.PhoneNumber,bk.AmountDeposit,bk.TypeOfAccount);
              }
@@ -189,7 +189,7 @@ void UpdateAccount()
          }
        // We test in order to make sure that the file exists or not
        if (temp ==0){
-            printf("This file doesn’t Exist");
+            printf("This file doesnï¿½t Exist");
        }
       fclose(p);
       fclose(t);
@@ -339,7 +339,7 @@ void WithdrawalFunction(){
        scanf("%d",&account);
 
 
-     // We create our While () loop function for updating employee’s details
+     // We create our While () loop function for updating employeeï¿½s details
 
      while(fscanf(p,"%s\t\t%d\t\t%s\t%s\t%d\t%s\t%d\t\t%s\t%d\t%s\n",bk.DateOfcreation,&bk.AccountNumber,bk.Name,bk.DateOfBirth,&bk.Age,
                  bk.Address,&bk.CitizenshipNumber,bk.PhoneNumber,&bk.AmountDeposit,bk.TypeOfAccount)!=EOF){
@@ -359,7 +359,7 @@ void WithdrawalFunction(){
 
              }
              else{
-                // We save previous employee’s details in a new file
+                // We save previous employeeï¿½s details in a new file
                 fprintf(t,"%s\t\t%d\t\t%s\t%s\t%d\t%s\t%d\t\t%s\t%d\t%s\n",bk.DateOfcreation,bk.AccountNumber,bk.Name,bk.DateOfBirth,bk.Age,
                           bk.Address,bk.CitizenshipNumber,bk.PhoneNumber,bk.AmountDeposit,bk.TypeOfAccount);
              }
@@ -394,7 +394,7 @@ void DepositFunction()
        printf("\nEnter an account number:");
        scanf("%d",&account);
 
-     // We create our While () loop function for updating employee’s details
+     // We create our While () loop function for updating employeeï¿½s details
 
      while(fscanf(p,"%s\t\t%d\t\t%s\t%s\t%d\t%s\t%d\t\t%s\t%d\t%s\nn",bk.DateOfcreation,&bk.AccountNumber,bk.Name,bk.DateOfBirth,&bk.Age,
                  bk.Address,&bk.CitizenshipNumber,bk.PhoneNumber,&bk.AmountDeposit,bk.TypeOfAccount)!=EOF){
@@ -415,7 +415,7 @@ void DepositFunction()
 
              }
              else{
-                // We save previous employee’s details in a new file
+                // We save previous employeeï¿½s details in a new file
                 fprintf(t,"%s\t\t%d\t\t%s\t%s\t%d\t%s\t%d\t\t%s\t%d\t%s\n",bk.DateOfcreation,bk.AccountNumber,bk.Name,bk.DateOfBirth,bk.Age,
                           bk.Address,bk.CitizenshipNumber,bk.PhoneNumber,bk.AmountDeposit,bk.TypeOfAccount);
              }
@@ -524,14 +524,7 @@ void DisplayAccount()
 
     }
 
-    while(!feof(p)){
-            fscanf(p,"%s\t\t%d\t\t%s\t%s\t%d\t%s\t%d\t\t%s\t%d\t%s\n",bk.DateOfcreation,&bk.AccountNumber,bk.Name,bk.DateOfBirth,&bk.Age,
-             bk.Address,&bk.CitizenshipNumber,bk.PhoneNumber,&bk.AmountDeposit,bk.TypeOfAccount);
-
-             printf("\n %d\t\t %s\t\t %s\t\t\t %s\t\t %d",bk.AccountNumber, bk.Name, bk.Address, bk.PhoneNumber, bk.AmountDeposit);
-
-
-    }
+    
     fclose(p);
                         }
 
