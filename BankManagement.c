@@ -524,7 +524,14 @@ void DisplayAccount()
 
     }
 
-    
+    while(!feof(p)){
+            fscanf(p,"%s\t\t%d\t\t%s\t%s\t%d\t%s\t%d\t\t%s\t%d\t%s\n",bk.DateOfcreation,&bk.AccountNumber,bk.Name,bk.DateOfBirth,&bk.Age,
+             bk.Address,&bk.CitizenshipNumber,bk.PhoneNumber,&bk.AmountDeposit,bk.TypeOfAccount);
+
+             printf("\n %d\t\t %s\t\t %s\t\t\t %s\t\t %d",bk.AccountNumber, bk.Name, bk.Address, bk.PhoneNumber, bk.AmountDeposit);
+
+
+    }
     fclose(p);
                         }
 
